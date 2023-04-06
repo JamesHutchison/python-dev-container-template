@@ -3,11 +3,8 @@ Script to run the generation template.
 
 To test, just create an empty directory then run this script from that directory.
 """
-from pathlib import Path
 import shutil
-
-
-import os
+from pathlib import Path
 
 # the directory this script is running out of
 source_directory = Path(__file__).parent.absolute()

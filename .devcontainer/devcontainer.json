@@ -24,7 +24,9 @@
                 "tamasfe.even-better-toml",
                 "njpwerner.autodocstring",
                 "mhutchie.git-graph",
-                "eamodio.gitlens"
+                "eamodio.gitlens",
+                "charliermarsh.ruff",
+                "ms-azuretools.vscode-docker"
             ],
             "settings": {
                 "python.defaultInterpreterPath": "/workspaces/python-dev-container-template/.venv/bin/python",
@@ -39,7 +41,6 @@
                     "--python-executable",
                     "/workspaces/python-dev-container-template/.venv/python"
                 ],
-                "python.linting.flake8Path": "/workspaces/python-dev-container-template/.venv/bin/ruff",
                 "python.testing.pytestArgs": [
                     "tests"
                 ],
@@ -47,11 +48,14 @@
                 "python.testing.pytestEnabled": true,
                 "python.analysis.autoImportCompletions": true,
                 "python.analysis.indexing": true,
-                "python.linting.flake8Enabled": true,
+                "python.linting.flake8Enabled": false,
                 "editor.codeActionsOnSave": {
                     "source.organizeImports": true
                 },
-                "autoDocstring.customTemplatePath": ".vscode/autodocstring.template"
+                "autoDocstring.customTemplatePath": ".vscode/autodocstring.template",
+                "ruff.path": [
+                    "/workspaces/python-dev-container-template/.venv/bin/ruff"
+                ]
             },
             "git.branchProtection": [
                 "main",
@@ -62,7 +66,8 @@
     "features": {
         "ghcr.io/devcontainers-contrib/features/poetry:2": {
             "version": "latest"
-        }
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
     // mount the .venv directory as a named volume for performance reasons
     "mounts": [
