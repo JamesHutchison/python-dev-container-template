@@ -13,6 +13,9 @@ source_directory = Path(__file__).parent.absolute()
 # workspace directory
 workspace_directory = Path(".").absolute()
 
+# project name
+project_name = workspace_directory.name
+
 files_to_mutate: list[Path] = []
 
 DIRECTORIES_TO_CREATE = [
@@ -53,4 +56,5 @@ for source, target in FILES_TO_COPY:
 for f in files_to_mutate:
     incoming = f.read_text()
     outgoing = incoming.replace("<<WORKSPACE DIRECTORY>>", str(workspace_directory))
+    outgoing = outgoing.replace("<<PROJECT NAME>>", project_name)
     f.write_text(outgoing)

@@ -39,7 +39,7 @@
                     "--show-column-numbers",
                     "--no-pretty",
                     "--python-executable",
-                    "/workspaces/python-dev-container-template/.venv/python"
+                    "/workspaces/python-dev-container-template/.venv/bin/python"
                 ],
                 "python.testing.pytestArgs": [
                     "tests"
