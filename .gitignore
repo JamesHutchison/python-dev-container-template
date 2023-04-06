@@ -128,4 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-dev container logs
+.dev_container_logs

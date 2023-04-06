@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Script to run the generation template.
 
@@ -16,7 +17,7 @@ files_to_mutate: list[Path] = []
 
 DIRECTORIES_TO_CREATE = [
     "tests",
-    "dev container logs",
+    ".dev_container_logs",
 ]
 
 for d in DIRECTORIES_TO_CREATE:
@@ -51,5 +52,5 @@ for source, target in FILES_TO_COPY:
 
 for f in files_to_mutate:
     incoming = f.read_text()
-    outgoing = incoming.replace("<<WORKSPACE DIRECTORY>>", workspace_directory)
+    outgoing = incoming.replace("<<WORKSPACE DIRECTORY>>", str(workspace_directory))
     f.write_text(outgoing)

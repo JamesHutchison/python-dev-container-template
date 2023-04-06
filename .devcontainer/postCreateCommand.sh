@@ -12,3 +12,5 @@ poetry add ruff --group=dev || true  # fast flake8 and isort alternative
 poetry add black --group=dev || true  # opinionated formatting
 poetry add pytest --group=dev || true  # testing
 poetry install --with=dev || true
+
+mkdir -p /workspaces/testdir
