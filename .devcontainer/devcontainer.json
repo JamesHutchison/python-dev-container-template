@@ -39,7 +39,7 @@
                     "--python-executable",
                     "/workspaces/python-dev-container-template/.venv/python"
                 ],
-                "python.linting.flake8Path": "ruff",
+                "python.linting.flake8Path": "/workspaces/python-dev-container-template/.venv/bin/ruff",
                 "python.testing.pytestArgs": [
                     "tests"
                 ],
@@ -52,7 +52,11 @@
                     "source.organizeImports": true
                 },
                 "autoDocstring.customTemplatePath": ".vscode/autodocstring.template"
-            }
+            },
+            "git.branchProtection": [
+                "main",
+                "master"
+            ]
         }
     },
     "features": {

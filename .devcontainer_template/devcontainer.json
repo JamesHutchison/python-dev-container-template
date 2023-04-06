@@ -37,9 +37,9 @@
                     "--show-column-numbers",
                     "--no-pretty",
                     "--python-executable",
-                    "<<WORKSPACE DIRECTORY>>/.venv/python"
+                    "<<WORKSPACE DIRECTORY>>/.venv/bin/python"
                 ],
-                "python.linting.flake8Path": "ruff",
+                "python.linting.flake8Path": "<<WORKSPACE DIRECTORY>>/.venv/bin/ruff",
                 "python.testing.pytestArgs": [
                     "tests"
                 ],
