@@ -52,7 +52,7 @@
                 "editor.codeActionsOnSave": {
                     "source.organizeImports": true
                 },
-                "autoDocstring.customTemplatePath": ".vscode/autodocstring.template",
+                "autoDocstring.customTemplatePath": ".vscode/autodocstring.mustache",
                 "ruff.path": [
                     "/workspaces/python-dev-container-template/.venv/bin/ruff"
                 ]
