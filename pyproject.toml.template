@@ -1,5 +1,7 @@
 [tool.ruff]
-line-length = 98
+# hard limit, error here
+line-length = 120
 
 [tool.black]
+# soft limit, wrap just before 100 chars
 line-length = 98
