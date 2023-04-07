@@ -1,4 +1,4 @@
-# python-dev-container-template
+# The Python Dev Container Template
 An opinionated template for a Python dev container
 
 ## Features
@@ -20,7 +20,7 @@ An opinionated template for a Python dev container
 The `.devcontainer/devcontainer.json` file defines the extensions, settings, etc that are the foundation.
 
 This means `.vscode/settings.json` isn't generated yet. This allows for it to be used as user settings or as
-additional settings. If you wish to have them be user settings, at `.vscode/settings.json` to the `.gitignore` file.
+additional settings. If you wish to have them be user settings, add `.vscode/settings.json` to the `.gitignore` file.
 
 Poetry is used for dependency management. The virtual environment is under `.env`.
 - Add production dependency: `poetry add <dependency>`
