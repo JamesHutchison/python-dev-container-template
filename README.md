@@ -10,6 +10,10 @@ An opinionated template for a Python dev container
 - The virtual environment is under a named volume for good performance
 - Docker-in-docker enabled
 - Line length: black wraps at the 98 soft limit, ruff errors at the 120 hard limit
+- Format on save as well as organize imports
+- Debug outside your code
+  - Currently there is an issue where the restart button doesn't work.
+  - https://github.com/microsoft/vscode-python/issues/19030
 
 
 ## Roles and Responsibilities
