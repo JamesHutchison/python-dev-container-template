@@ -11,6 +11,13 @@ An opinionated template for a Python dev container
 - Docker-in-docker
 
 
+## Roles
+The `.devcontainer/devcontainer.json` file defines the extensions, settings, etc that are the foundation.
+
+This means `.vscode/settings.json` isn't generated yet. This allows for it to be used as user settings or as
+additional settings.
+
+
 ## Running
 Currently there isn't a streamlined way.
 
