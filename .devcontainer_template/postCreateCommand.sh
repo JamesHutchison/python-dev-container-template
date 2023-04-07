@@ -13,3 +13,5 @@ poetry init -n --python=~3.11 || true
 # pytest - testing
 poetry add mypy ruff black pytest --group=dev || true
 poetry install --with=dev || true
+
+mkdir -p .dev_container_logs
