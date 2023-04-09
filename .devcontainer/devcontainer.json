@@ -29,6 +29,7 @@
                 "ms-azuretools.vscode-docker"
             ],
             "settings": {
+                "editor.formatOnSave": true,
                 "python.defaultInterpreterPath": "/workspaces/python-dev-container-template/.venv/bin/python",
                 "python.formatting.provider": "black",
                 "python.linting.mypyEnabled": true,
