@@ -33,6 +33,9 @@
                 "files.trimTrailingWhitespace": true,
                 "python.defaultInterpreterPath": "/workspaces/python-dev-container-template/.venv/bin/python",
                 "python.formatting.provider": "black",
+                "python.formatting.blackArgs": [
+                    "--no-color"
+                ],
                 "python.linting.mypyEnabled": true,
                 "python.linting.mypyPath": "dmypy",
                 "python.linting.mypyArgs": [
