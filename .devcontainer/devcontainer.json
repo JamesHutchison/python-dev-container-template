@@ -39,7 +39,8 @@
                 "python.linting.mypyEnabled": true,
                 "python.linting.mypyPath": "dmypy",
                 "python.linting.mypyArgs": [
-                    "run --",
+                    "run",
+                    "--",
                     "--ignore-missing-imports",
                     "--show-column-numbers",
                     "--no-pretty",
