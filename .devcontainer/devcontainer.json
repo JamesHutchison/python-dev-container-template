@@ -37,7 +37,7 @@
                     "--no-color"
                 ],
                 "python.linting.mypyEnabled": true,
-                "python.linting.mypyPath": "dmypy",
+                "python.linting.mypyPath": "/workspaces/python-dev-container-template/.venv/bin/dmypy",
                 "python.linting.mypyArgs": [
                     "run",
                     "--",
