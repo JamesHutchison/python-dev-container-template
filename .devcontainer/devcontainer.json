@@ -29,6 +29,7 @@
                 "ms-azuretools.vscode-docker"
             ],
             "settings": {
+                "files.insertFinalNewline": true,
                 "editor.formatOnSave": true,
                 "files.trimTrailingWhitespace": true,
                 "python.defaultInterpreterPath": "/workspaces/python-dev-container-template/.venv/bin/python",
