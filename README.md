@@ -15,6 +15,8 @@ An opinionated template for a Python dev container
   - Currently there is an issue where the restart button doesn't work.
   - https://github.com/microsoft/vscode-python/issues/19030
 
+## Limitations
+- Currently just VS Code configurations
 
 ## Roles and Responsibilities
 The `.devcontainer/devcontainer.json` file defines the extensions, settings, etc that are the foundation.
@@ -28,12 +30,10 @@ Poetry is used for dependency management. The virtual environment is under `.env
 
 Tests are to be located under the `tests` directory.
 
-## Running
-Currently there isn't a streamlined way.
+## Usage (inside your unconfigured dev container or codespace)
 
-Steps:
-- Clone this repo into a temporary directory
-- Change directory to where you want the project to live
-- Run `py_dev_container_template.py` out of the temporary directory with the cwd set to the target directory.
-
-You can do this from within an initial python dev container, then rebuild the container.
+- Step 1 - `cd /workspaces/`
+- Step 2 - `git clone https://github.com/JamesHutchison/python-dev-container-template.git`
+- Step 3 - `cd /workspaces/my-project`
+- Step 4 - `/workspaces/python-dev-container-template/py_dev_container_template.py` (script runs without args)
+- Step 5 - `cmd/ctrl` + `shift` + `p` -> `Rebuild container`
