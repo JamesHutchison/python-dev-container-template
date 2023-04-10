@@ -32,13 +32,13 @@
                 "files.insertFinalNewline": true,
                 "editor.formatOnSave": true,
                 "files.trimTrailingWhitespace": true,
-                "python.defaultInterpreterPath": "/workspaces/python-dev-container-template/.venv/bin/python",
+                "python.defaultInterpreterPath": "./.venv/bin/python",
                 "python.formatting.provider": "black",
                 "python.formatting.blackArgs": [
                     "--no-color"
                 ],
                 "python.linting.mypyEnabled": true,
-                "python.linting.mypyPath": "/workspaces/python-dev-container-template/.venv/bin/dmypy",
+                "python.linting.mypyPath": "./.venv/bin/dmypy",
                 "python.linting.mypyArgs": [
                     "run",
                     "--",
@@ -46,7 +46,7 @@
                     "--show-column-numbers",
                     "--no-pretty",
                     "--python-executable",
-                    "/workspaces/python-dev-container-template/.venv/bin/python"
+                    "./.venv/bin/python"
                 ],
                 "python.testing.pytestArgs": [
                     "tests"
@@ -61,7 +61,7 @@
                 },
                 "autoDocstring.customTemplatePath": ".vscode/autodocstring.mustache",
                 "ruff.path": [
-                    "/workspaces/python-dev-container-template/.venv/bin/ruff"
+                    "./.venv/bin/ruff"
                 ]
             },
             "git.branchProtection": [
