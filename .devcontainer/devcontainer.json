@@ -26,7 +26,8 @@
                 "mhutchie.git-graph",
                 "eamodio.gitlens",
                 "charliermarsh.ruff",
-                "ms-azuretools.vscode-docker"
+                "ms-azuretools.vscode-docker",
+                "stkb.rewrap"
             ],
             "settings": {
                 "files.insertFinalNewline": true,
@@ -62,7 +63,8 @@
                 "autoDocstring.customTemplatePath": ".vscode/autodocstring.mustache",
                 "ruff.path": [
                     "./.venv/bin/ruff"
-                ]
+                ],
+                "rewrap.wrappingColumn": 88
             },
             "git.branchProtection": [
                 "main",
