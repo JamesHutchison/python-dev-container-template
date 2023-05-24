@@ -33,7 +33,7 @@ Tests are to be located under the `tests` directory.
 ## Usage (inside your unconfigured dev container or codespace)
 
 - Step 1 - `cd /workspaces/`
-- Step 2 - `git clone https://github.com/JamesHutchison/python-dev-container-template.git`
+- Step 2 - `sudo git clone https://github.com/JamesHutchison/python-dev-container-template.git`
 - Step 3 - `cd /workspaces/my-project`
 - Step 4 - `/workspaces/python-dev-container-template/py_dev_container_template.py` (script runs without args)
 - Step 5 - `cmd/ctrl` + `shift` + `p` -> `Rebuild container`
