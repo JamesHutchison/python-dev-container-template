@@ -26,7 +26,8 @@
                 "mhutchie.git-graph",
                 "eamodio.gitlens",
                 "charliermarsh.ruff",
-                "ms-azuretools.vscode-docker"
+                "ms-azuretools.vscode-docker",
+                "matangover.mypy"
             ],
             "settings": {
                 "files.insertFinalNewline": true,
@@ -37,17 +38,8 @@
                 "python.formatting.blackArgs": [
                     "--no-color"
                 ],
-                "python.linting.mypyEnabled": true,
-                "python.linting.mypyPath": "./.venv/bin/dmypy",
-                "python.linting.mypyArgs": [
-                    "run",
-                    "--",
-                    "--ignore-missing-imports",
-                    "--show-column-numbers",
-                    "--no-pretty",
-                    "--python-executable",
-                    "./.venv/bin/python"
-                ],
+                "python.linting.mypyEnabled": false,
+                "mypy.runUsingActiveInterpreter": true,
                 "python.testing.pytestArgs": [
                     "tests"
                 ],
