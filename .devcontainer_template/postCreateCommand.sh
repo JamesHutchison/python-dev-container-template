@@ -19,3 +19,4 @@ poetry add mypy ruff black pytest --group=dev || true
 poetry install --with=dev || true
 
 mkdir -p .dev_container_logs
+echo "*" > .dev_container_logs/.gitignore
