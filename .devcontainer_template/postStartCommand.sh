@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
-mkdir -p .dev_container_logs
-echo "*" > .dev_container_logs/.gitignore
-
 # run in the background at startup
-nohup bash .devcontainer/postStartBackground.sh > ".dev_container_logs/postStartBackground.out" &
+nohup bash -c ".devcontainer/postStartBackground.sh &" > ".dev_container_logs/postStartBackground.out"
 
-# ensure nohup has a chance to run
-sleep 3
+# note: do NOT have the last command run in the background else it won't really run!
