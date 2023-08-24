@@ -5,6 +5,9 @@ set -e
 git config --global pull.rebase true
 git config --global remote.origin.prune true
 
+# install shell-ai
+pipx install shell-ai
+
 # if the .venv directory was mounted as a named volume, it needs the ownership changed
 sudo chown vscode .venv || true
 
