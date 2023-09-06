@@ -71,6 +71,12 @@
         "ghcr.io/devcontainers/features/sshd:1": {
             "version": "latest"
         }
+        // uncomment if using CUDA (machine learning w/ nVidia GPU)
+        // note that host system sets drivers. For windows use WSL2 and the Cuda toolkit. The latest version of CUDA may not be compatible with what you're using
+        // CUDA 11.7 is a good starting point
+        // "ghcr.io/devcontainers/features/nvidia-cuda:1": {},
+        // uncomment if you want to use anaconda. This is commonly used in the data science / machine learning space
+        // "ghcr.io/devcontainers/features/anaconda:1": {}
     },
     // mount the .venv directory as a named volume for performance reasons
     "mounts": [
