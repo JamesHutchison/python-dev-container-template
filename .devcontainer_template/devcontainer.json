@@ -76,5 +76,15 @@
     "mounts": [
         "source=${localWorkspaceFolderBasename}-venv,target=${containerWorkspaceFolder}/.venv,type=volume"
     ],
+    // uncomment if you need the GPU for machine learning applications
+    // "runArgs": [
+    //     "--gpus",
+    //     "all",
+    //     "--ipc=host",
+    //     "--ulimit",
+    //     "memlock=-1",
+    //     "--ulimit",
+    //     "stack=67108864"
+    // ],
     "workspaceFolder": "<<WORKSPACE DIRECTORY>>"
 }
