@@ -57,4 +57,4 @@ for f in files_to_mutate:
     incoming = f.read_bytes()
     outgoing = incoming.replace(b"<<WORKSPACE DIRECTORY>>", str(workspace_directory).encode("utf-8"))
     outgoing = outgoing.replace(b"<<PROJECT NAME>>", project_name.encode("utf-8"))
-    f.write_text(outgoing)
+    f.write_bytes(outgoing)
