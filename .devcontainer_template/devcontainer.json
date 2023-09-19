@@ -45,6 +45,7 @@
                 ],
                 "python.testing.unittestEnabled": false,
                 "python.testing.pytestEnabled": true,
+                "python.testing.autoTestDiscoverOnSaveEnabled": true,
                 "python.analysis.autoImportCompletions": true,
                 "python.analysis.indexing": true,
                 "python.linting.flake8Enabled": false,
