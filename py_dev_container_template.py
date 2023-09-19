@@ -54,7 +54,7 @@ for source, target in FILES_TO_COPY:
         files_to_mutate.append(f)
 
 for f in files_to_mutate:
-    incoming = f.read_text()
-    outgoing = incoming.replace("<<WORKSPACE DIRECTORY>>", str(workspace_directory))
-    outgoing = outgoing.replace("<<PROJECT NAME>>", project_name)
-    f.write_text(outgoing)
+    incoming = f.read_bytes()
+    outgoing = incoming.replace(b"<<WORKSPACE DIRECTORY>>", str(workspace_directory).encode("utf-8"))
+    outgoing = outgoing.replace(b"<<PROJECT NAME>>", project_name.encode("utf-8"))
+    f.write_bytes(outgoing)
