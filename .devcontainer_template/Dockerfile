@@ -1,2 +1,2 @@
-FROM mcr.microsoft.com/vscode/devcontainers/python:0-3.11-bullseye
+FROM mcr.microsoft.com/vscode/devcontainers/python:3.12-bullseye
 
